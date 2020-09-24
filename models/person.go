@@ -4,8 +4,12 @@ package models
 
 
 type Person struct {
+	//Name string
+	//Age int
+	// Sex string
 	Name string
-	Age int
-	Sex string
+	Birthday int
+	Addrss string
+	Nick string
 
 }
