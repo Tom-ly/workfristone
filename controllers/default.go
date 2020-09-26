@@ -16,6 +16,7 @@ func (c *MainController) Get() {
 
 	//1.获取请求数据
 	name:=c.Ctx.Input.Query("name")
+	//或者用c.GetString()
 	age:=c.Ctx.Input.Query("age")
 
 	//2.使用固定数据进行数据校验
@@ -51,6 +52,8 @@ func (c *MainController) Get() {
 
 
 //}
+
+//该方法用于处理post类型请求
 func (c*MainController)Post(){
 	//1.解析post请求的参数jsong格式
 
@@ -68,11 +71,15 @@ func (c*MainController)Post(){
 	}
 
 	fmt.Println("姓名:",person.Name)
-	fmt.Println("年龄:",person.Birthday)
-	fmt.Println("性别:",person.Addrss)
-	fmt.Println("性别:",person.Nick)
+	fmt.Println("年龄:",person.Age)
+	fmt.Println("性别:",person.Sex)
+
 
 
 	c.Ctx.WriteString("数据解析成功")
+
+}
+
+func (c *MainController)Delete(){
 
 }
