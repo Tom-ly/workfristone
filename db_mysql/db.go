@@ -17,8 +17,8 @@ var Db*sql.DB
 func init()  {
 	fmt.Println("连接mysql数据库")
 	config :=beego.AppConfig
-	dbDriver :=config.String("ddb_driverName")
-	dbUser :=config.String("db_User")
+	dbDriver :=config.String("db_driverName")
+	dbUser :=config.String("db_user")
 	dbPassword :=config.String("db_password")
 	dbIp :=config.String("db_ip")
 	dbName :=config.String("db_name")
