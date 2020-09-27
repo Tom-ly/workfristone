@@ -37,7 +37,7 @@ func (c *MainController) Get() {
 	c.TplName = "index.tpl"
 }
 //func (c*MainController)Post()  {
-	//1.解析post请求的参数
+	//1.解析post请求的参数，from表单格式
 //	name :=c.Ctx.Request.FormValue("name")
 //	age := c.Ctx.Request.FormValue("age")
 //	fmt.Println(name,age)
